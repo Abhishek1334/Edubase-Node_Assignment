@@ -23,4 +23,4 @@ pool.getConnection()
 	});
 
 
-export default pool;
+module.exports = pool;

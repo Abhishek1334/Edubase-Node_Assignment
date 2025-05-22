@@ -1,4 +1,5 @@
 # School Management API
+LIVE BACKNED API URL : https://glistening-three-opal.glitch.me/
 
 A simple Node.js + Express + MySQL API to manage schools.
 
@@ -13,6 +14,13 @@ A simple Node.js + Express + MySQL API to manage schools.
 
 
 Add a new school with name, address, latitude and longitude.
+
+```
+curl -X POST https://glistening-three-opal.glitch.me//addSchool \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Sample School","address":"123 Main St","latitude":40.7128,"longitude":-74.0060}'
+
+```
 
 **Example Request:** `POST http://localhost:3306/addSchool`
 
@@ -29,6 +37,9 @@ Add a new school with name, address, latitude and longitude.
 **Response:** `{"message": "School added successfully"}`
 
 ### GET /listSchools?lat=XXX&lng=XXX
+
+
+
 
 List all the schools in a given radius of latitude and longitude.
 The default radius is set to 10 km, but can be changed using query parameter `radius`.
