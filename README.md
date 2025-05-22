@@ -1,5 +1,9 @@
 # School Management API
-LIVE BACKNED API URL : https://glistening-three-opal.glitch.me/
+
+- LIVE BACKEND API URL : https://glistening-three-opal.glitch.me/
+- Resume :  https://drive.google.com/file/d/1yuj34u6f6rtUIG3shVM2K7CfhbjsYRoJ/view?usp=sharing
+- POSTMAN Collection : https://red-shadow-473659.postman.co/workspace/New-Team-Workspace~8419db09-59a6-4c73-a267-7d0fcacfc033/collection/41274001-3cb01de2-5f43-488f-9f3d-3cd3f8e526ce?action=share&creator=41274001
+- Email : AbhishekRajoria24@gmail.com
 
 A simple Node.js + Express + MySQL API to manage schools.
 
