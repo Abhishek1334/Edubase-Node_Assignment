@@ -1,4 +1,4 @@
-import pool from "../db/connection.js";
+const pool = require("../db/connection");
 
 // Haversine formula to calculate distance between two geo points in km
 function getDistance(lat1, lon1, lat2, lon2) {
@@ -17,7 +17,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
 	return R * c;
 }
 
-export const addSchool = async (req, res) => {
+const addSchool = async (req, res) => {
 	const { name, address, latitude, longitude } = req.body;
 
 	// Validate inputs
@@ -57,7 +57,7 @@ export const addSchool = async (req, res) => {
 	}
 };
 
-export const listSchools = async (req, res) => {
+const listSchools = async (req, res) => {
 	const { latitude, longitude } = req.query;
 
 	if (!latitude || !longitude) {
@@ -100,3 +100,5 @@ export const listSchools = async (req, res) => {
 		});
 	}
 };
+
+module.exports = { addSchool, listSchools };

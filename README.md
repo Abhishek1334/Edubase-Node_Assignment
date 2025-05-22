@@ -35,7 +35,7 @@ The default radius is set to 10 km, but can be changed using query parameter `ra
 
 **Query Parameters:**
 
-`lat`: Latitude of the user's location (required)
+`lat`: Latitude of the user's location (required)  
 `lng`: Longitude of the user's location (required)
 
 **Example Request:** `GET http://localhost:3306/listSchools?lat=28.7041&lng=77.1025`

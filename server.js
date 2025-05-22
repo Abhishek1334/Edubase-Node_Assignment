@@ -1,15 +1,13 @@
-import express from "express";
-import dotenv from "dotenv";
-import schoolRoutes from "./routes/schoolRoutes.js";
+const express = require("express");
+const dotenv = require("dotenv");
+const schoolRoutes = require("./routes/schoolRoutes.js");
 
 dotenv.config();
 
 const app = express();
 
-app.use(express.json()); // parse JSON bodies
-
-// Use /api prefix for all school routes (optional but best practice)
-app.use("/api", schoolRoutes);
+app.use(express.json()); 
+app.use("/", schoolRoutes);
 
 const PORT = process.env.PORT || 3000;
 
