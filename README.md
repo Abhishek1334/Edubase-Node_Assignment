@@ -60,7 +60,7 @@ The default radius is set to 10 km, but can be changed using query parameter `ra
         "address": "123 Main St",
         "latitude": 28.7041,
         "longitude": 77.1025,
-		"distance_km": 9.8765
+	"distance_km": 9.8765
     },
     ...
 ]
